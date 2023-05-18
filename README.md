@@ -1,5 +1,5 @@
 # SABRE
-Sentiment Analysis Based Recommendation for Electronic Products
+Sentiment Analysis Based Recommendation for Electronic Products (SABRE)
 This project was built by:
 
 1. Aditya Nair (@adityabnair)
