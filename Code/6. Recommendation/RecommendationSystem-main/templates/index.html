@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendation</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+  
+  <div>
+  </div>
+  <div class="login" id="navbar">
+    <h1>Product Recommendation</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+
+     <form action="{{ url_for('predict')}}" method="post">
+      <input type="text" name="name" placeholder="Enter Product Name" /><br><br>
+       <input type="text" name="id" placeholder="Enter User ID" required="required" /><br>
+       <button type="submit" class="btn">Recommend</button>
+     </form>
+   <br>
+   <br>
+     
+   <br><br>
+    </td>
+   <!--{{ user_id,prediction_text }}-->
+   User ID: {{user_id}}
+   
+  <table class="center">
+    <tbody>
+      {% for table in tables %}
+      <h2>Recommendations</h2><br>
+        {{ table|safe }}
+      {% endfor %}
+    </tbody>
+  </table> 
+  {{error}}
+ </div>
+</body>
+</html>

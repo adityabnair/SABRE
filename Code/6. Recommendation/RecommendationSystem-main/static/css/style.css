@@ -1,0 +1,37 @@
+body { 
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+	background: #092756;
+	color: #fff;
+	font-size: 16px;
+	text-align:center;
+	letter-spacing:1.2px;
+	/*background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);*/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+
+} 
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  html, body {
+    width: 100%;
+}
+table {
+    margin: 0 auto;
+}
+
+.btn { 
+    background-color: #3660bb;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
